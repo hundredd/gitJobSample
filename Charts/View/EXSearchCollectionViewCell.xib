@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="EXSearchCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="169" height="161"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="169" height="161"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bkN-M6-qJ7">
+                        <rect key="frame" x="50" y="29" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="EoV-X7-3rG"/>
+                            <constraint firstAttribute="width" constant="70" id="LKz-ME-M4e"/>
+                            <constraint firstAttribute="height" constant="70" id="XcK-c5-9XR"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EoV-X7-3rG"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcZ-pv-UoM">
+                        <rect key="frame" x="70" y="119" width="30" height="20"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="bkN-M6-qJ7" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="0.8" id="8fo-08-5On"/>
+                <constraint firstItem="DcZ-pv-UoM" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="1.6" id="KTb-Oj-lyd"/>
+                <constraint firstItem="DcZ-pv-UoM" firstAttribute="top" secondItem="bkN-M6-qJ7" secondAttribute="bottom" constant="20" id="RLE-iT-gvs"/>
+                <constraint firstItem="bkN-M6-qJ7" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="e8e-Gi-HRa"/>
+                <constraint firstItem="DcZ-pv-UoM" firstAttribute="centerX" secondItem="bkN-M6-qJ7" secondAttribute="centerX" id="mrm-w5-BDq"/>
+            </constraints>
+            <size key="customSize" width="169" height="161"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="RLE-iT-gvs"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imageView" destination="bkN-M6-qJ7" id="iCl-AL-klN"/>
+                <outlet property="textLabel" destination="DcZ-pv-UoM" id="uyM-05-h61"/>
+            </connections>
+            <point key="canvasLocation" x="174.5" y="246.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,7 @@
+platform:ios,'7.0'
+target 'Charts' do
+
+pod 'BM4Group', :git => 'https://git.oschina.net/sealand/BM4Group.git'
+pod 'IQKeyboardManager', '~> 3.3.5'
+
+end

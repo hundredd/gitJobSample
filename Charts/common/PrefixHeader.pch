@@ -1,0 +1,145 @@
+//
+//  PrefixHeader.pch
+//  特种车调度
+//
+//  Created by 陈宇 on 15/8/17.
+//
+//
+
+#ifndef ______PrefixHeader_pch
+#define ______PrefixHeader_pch
+
+#import "ServerPathConstants.h"
+#import "BM4Group.h"
+#import "MJRefresh.h"
+#import "Masonry.h"
+#import "UIImageView+WebCache.h"
+#import "BMHttpTool.h"
+#import "BMAccountManager.h"
+#import "BMBaseModel+BMExtensions.h"
+#import "BMRequest.h"
+#import "BMResponse.h"
+#import "UIColor+Extension.h"
+#import "BMUtils+RYUtilsExtends.h"
+#import "UIView+RYCorner.h"
+#import "UIView+xibExtensions.h"
+#import "UIView+RYDashBorderExtension.h"
+#import "UIImage+Extension.h"
+#import "BMUpateModel.h"
+#import "ConstVarHeader.h"
+
+//0：车主 1：站点
+#if ZD
+#define kRole @"1"
+#define kRoleType 1
+#else
+#define kRole @"0"
+#define kRoleType 0
+#endif
+
+#pragma mark - 颜色
+
+//#define kGlobalColor BMColor(0.f, 147.f, 221.f, 1.f)
+#define kGlobalColor BMColor(34.f, 105.f, 213.f, 1.f)
+
+#define kBorderColor BMColor(153.f, 153.f, 153.f, 1.f)
+#define kBGColor BMColor(234.f, 234.f, 234.f, 1.f)
+
+#pragma mark - 字体
+#define kMainFont [UIFont systemFontOfSize:13.f]
+#define kTitleFont [UIFont systemFontOfSize:18.f]
+
+#pragma mark - 1像素
+#define kOnePix 1.0/[UIScreen mainScreen].scale
+
+static NSString *const reuseIdentifier = @"reuseCell";
+
+#define kDefaultAnimDuration 0.25f
+
+#define kTextViewTextMaxLength 200
+
+//蒲公英Crash收集[测试用]
+//#if ZD
+//#define PGY_APP_ID @"5b662cf91c90d73be7e1d4c61d20aaa8"
+//#else
+//#define PGY_APP_ID @"472d96982716b54777ad4c2675519b06"
+//#endif
+
+//蒲公英Crash收集[生产用]
+#if ZD
+#define PGY_APP_ID @"ce8a583fe2e511bc2c0f4f3c4be1e2aa"
+#else
+#define PGY_APP_ID @"ecb33218e5bfe5b0d50f25922f05e7b7"
+#endif
+
+//极光推送配置信息
+#define JPushAppKey @"5faae45380be147f1af81fae"
+#define JPushSecret @"5ff08d2c6cfdc3215c5c1932"
+
+#define JPushAppKey_cz @"53caef7a1012ab4695314091"
+#define JPushSecret_cz @"c15c30f4e7be6fad85dd7788"
+
+//支付宝配置信息
+#define AliPaySchema @"alipaySchema"
+#define AliPayRedirectURL @"changePaySuccess/"
+#define AliPayPID @"2088021322429250"
+#define AliPayProductID @"beituowulian@126.com"
+#define AliPayPrivateKey @"MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAKn6JFEMyXM4w3DmxCt8OSBbZFlEFzpvy5/nmmNCnrjmN1Xhpo6h/oRIJkClN8YTbnS0RM1BmZTdYZ9XJrCg2Q19EyRA8VTPyUJ+RHO0vcc0UFGSpBdVDC1B5eqRo6maaFNQSOE8C6oqfEfYSmTzGG5q8zrnUlvyyjEj82AiwxgJAgMBAAECgYBUA8C5kvFrky3++wERYVg3JxUljiNRDfr+sZI856veRmQpfdw+edF8ftDxePhlXitlYcj0Dy2jR/09re0AtrAxTVwdSuRH+nQSDBpcCb5T7+3AYmbcjwT20roCdiN+a0HyhwGw9vjWKgJFckJTot99P0meiNTeOpTQmLWgb0MhUQJBANL3x7gbTbEZNcDodaalu+8Z6cS99oSEKKEWRoyxxslwWazw2GuohaQWVBS/+Icpf6cJSqzz7ZVL8yv9HZU9fmUCQQDOQnG665ydMJA+Rt3hoQtGt28xPKpr6jKUDJYyJmmWTV4+LTVnstW52dJQe8vG5SvtjC3mJN+eZEmS6cWt51bVAkEAiorJj2/uv2SM1lhSGtQv7L8Zs2gEodWgUNkuD2sX3mV3noizt09+I9m98bp33Vs1R15kuduepDKySKr6aG1vuQJAbvfKblEymlM1V3wTBb/57BrmZKwJ2DNQ8Nvwtpx59BY93N+/usG5QNsSzqA72w8S2iOv0gEGmhXEi5jf9Jbg3QJAJxKZkcLXKEHFUPxMeNd+4keawTzVM+l7NdF0Rs2F5IdrT8YVtq4GE2yIm43zCwMX2S0hlXJRKtswLxVNq1OIZQ=="
+
+//百度LBS云
+#define kBaiduLBS_AK @"Z64LqKsBPVB0O9Pl9aI9w8Tq"
+#define kBaiduLBS_geotable_id 141131
+
+//百度地图相关
+#define BaiduMapAK_ZD               @"TG90z74lF11ghF6XNburpNpfML77Usra"  //在API控制台申请得到的ak，该ak必须为iOS类型的ak
+#define BaiduMapMCODE_ZD            @"com.beto.tcbzd"          //申请iOS类型ak时填写的安全码
+#define BaiduMapAK_CZ               @"FAbBMQYOC7sZA2DTLA2aAqIa8kG2M3BA"
+#define BaiduMapMCODE_CZ            @"com.beto.tcbcz"
+
+//友盟
+#define UMSocal_AppKey @"5742ada0e0f55a877d000ec9"
+
+//shareSDK
+#define ShareSDK_AppKey @"1350ff4245f36"
+#define ShareSDK_AppSecret @"b4edbc213287bdf8f3623c4b5de738ad"
+
+//分享渠道
+//新浪微博
+#define ShareSDK_SianWeiboAppKeyCZ @"777751181"
+#define ShareSDK_SianWeiboAppSecretCZ @"28fc851c4d6bfc70e344be99a91d82a6"
+#define ShareSDK_SianWeiboRedirectUriCZ @"http://sns.whalecloud.com/sina2/callback"
+
+#define ShareSDK_SianWeiboAppKeyZD @"2689908010"
+#define ShareSDK_SianWeiboAppSecretZD @"4492bc0edc09fdc35cc07966533fc29e"
+#define ShareSDK_SianWeiboRedirectUriZD @"http://sns.whalecloud.com/sina2/callback"
+
+//腾讯
+#define ShareSDK_TencentWeiboAppIdCZ @"1105419788"
+#define ShareSDK_TencentWeiboAppKeyCZ @"ocEfIZ7QJT8hixuo"
+#define ShareSDK_TencentWeiboRedirectUriCZ @"http://www.umeng.com/social"
+
+#define ShareSDK_TencentWeiboAppIdZD @"1105200597"
+#define ShareSDK_TencentWeiboAppKeyZD @"uF7yJNltGllLy60I"
+#define ShareSDK_TencentWeiboRedirectUriZD @"http://www.umeng.com/social"
+
+//微信
+#define ShareSDK_WeChatAppKeyZD @"wx03498afdd3e95d93"
+#define ShareSDK_WeChatAppSecretZD @"42dc60cc183f8d7ff03fef94207f7256"
+#define ShareSDK_WeChatURL @"http://www.umeng.com/social"
+
+#define ShareSDK_WeChatAppKeyCZ @"wxb93a86b15d126b0c"
+#define ShareSDK_WeChatAppSecretCZ @"1a81fcc38944148e8de38f6953ee946b"
+//access_token过期处理通知
+#define kAccessTokenTimeoutStatus 1001
+#define kAccessTokenTimeoutNotificationName  @"kAccessTokenTimeoutNotification"
+
+
+//创建订单通知
+#define kNoDataCreateNotificationName @"kNoDataCreateNotificationName"
+
+
+//UUID相关
+#define  KEY_USERNAME_PASSWORD @"com.company.app.usernamepassword"
+#define  KEY_USERNAME @"com.company.app.username"
+#define  KEY_PASSWORD @"com.company.app.password"
+#endif

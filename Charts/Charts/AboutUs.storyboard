@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gn0-xa-Rdg">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--关于我们-->
+        <scene sceneID="xyQ-Yi-KS9">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="PKM-cQ-aFF" customClass="EXAboutUsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SHT-U0-OVI"/>
+                        <viewControllerLayoutGuide type="bottom" id="le6-z1-ied"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O8k-ca-g8P">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OpK-vf-lgO">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OpK-vf-lgO" firstAttribute="leading" secondItem="O8k-ca-g8P" secondAttribute="leading" id="8L1-oh-Guq"/>
+                            <constraint firstItem="le6-z1-ied" firstAttribute="top" secondItem="OpK-vf-lgO" secondAttribute="bottom" id="HqJ-e2-ZU9"/>
+                            <constraint firstAttribute="trailing" secondItem="OpK-vf-lgO" secondAttribute="trailing" id="kzo-GS-KSg"/>
+                            <constraint firstItem="OpK-vf-lgO" firstAttribute="top" secondItem="SHT-U0-OVI" secondAttribute="bottom" id="oDw-UZ-fcd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="关于我们" id="WFv-XR-shw"/>
+                    <connections>
+                        <outlet property="webView" destination="OpK-vf-lgO" id="KaQ-nT-UYy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ewd-PV-QfX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1265" y="412"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sbO-T5-7Gg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gn0-xa-Rdg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Md0-6t-VdT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PKM-cQ-aFF" kind="relationship" relationship="rootViewController" id="8TB-85-Gqq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pcH-0R-hqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="470" y="412"/>
+        </scene>
+    </scenes>
+</document>

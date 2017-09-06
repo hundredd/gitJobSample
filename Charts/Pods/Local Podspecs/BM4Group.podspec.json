@@ -1,0 +1,46 @@
+{
+  "name": "BM4Group",
+  "version": "0.0.1",
+  "summary": "BM4Group Develpoe iOS Library.",
+  "description": "BM4Group Develpoe iOS Library.",
+  "homepage": "https://git.oschina.net/sealand/BM4Group.git",
+  "license": "MIT",
+  "authors": {
+    "Chrain": "chrain.master@gmail.com"
+  },
+  "source": {
+    "git": "https://git.oschina.net/sealand/BM4Group.git",
+    "tag": 0.01
+  },
+  "source_files": [
+    "Classes",
+    "Classes/**/*.{h,m}"
+  ],
+  "requires_arc": true,
+  "dependencies": {
+    "MBProgressHUD": [
+
+    ],
+    "AFNetworking": [
+
+    ],
+    "SDWebImage": [
+
+    ],
+    "MJExtension": [
+
+    ],
+    "MJRefresh": [
+
+    ],
+    "Masonry": [
+
+    ]
+  },
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
+}

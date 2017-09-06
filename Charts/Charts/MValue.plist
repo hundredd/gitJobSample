@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>发生月份</string>
+	<string>项目编码</string>
+	<string>项目名称</string>
+	<string>付款单位</string>
+	<string>负责人</string>
+	<string>产量</string>
+	<string>产值</string>
+	<string>材料成本</string>
+	<string>业务提成</string>
+	<string>客服费用</string>
+	<string>居间费用</string>
+	<string>税金</string>
+	<string>运输费用</string>
+	<string>泵送费用</string>
+	<string>财务费用</string>
+	<string>站点分摊</string>
+	<string>总部分摊</string>
+	<string>基本H值</string>
+	<string>本期M值</string>
+	<string>累计M值</string>
+</array>
+</plist>

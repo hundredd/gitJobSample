@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B10F7DE31F413AB00002A7B2 /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B10F7DDE1F413AB00002A7B2 /* WXApiManager.m */; };
+		B10F7DE41F413AB00002A7B2 /* WXApiRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B10F7DE01F413AB00002A7B2 /* WXApiRequestHandler.m */; };
+		B10F7DE51F413AB00002A7B2 /* WXApiResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B10F7DE21F413AB00002A7B2 /* WXApiResponseHandler.m */; };
+		B18161A11F41355900E300FD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18161A01F41355900E300FD /* Security.framework */; };
+		B18161BE1F4138E300E300FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B18161B01F4138E300E300FD /* AppDelegate.m */; };
+		B18161BF1F4138E300E300FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18161B41F4138E300E300FD /* ViewController.m */; };
+		B18161C01F4138E300E300FD /* PdfShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18161B71F4138E300E300FD /* PdfShowViewController.m */; };
+		B18161C11F4138E300E300FD /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B18161B91F4138E300E300FD /* logo.png */; };
+		B18161C21F4138E300E300FD /* Reader.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B18161BA1F4138E300E300FD /* Reader.pdf */; };
+		B18161C81F4139F600E300FD /* WebChatShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18161C71F4139F600E300FD /* WebChatShareViewController.m */; };
+		B18161D71F413A6800E300FD /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B18161D01F413A6800E300FD /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */; };
+		B18161D81F413A6800E300FD /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B18161D21F413A6800E300FD /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */; };
+		B18161D91F413A6800E300FD /* UIAlertView+WX.m in Sources */ = {isa = PBXBuildFile; fileRef = B18161D41F413A6800E300FD /* UIAlertView+WX.m */; };
+		B18161DA1F413A6800E300FD /* WXMediaMessage+messageConstruct.m in Sources */ = {isa = PBXBuildFile; fileRef = B18161D61F413A6800E300FD /* WXMediaMessage+messageConstruct.m */; };
+		B1D5C53C1F38463B0067E9B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D5C53B1F38463B0067E9B8 /* main.m */; };
+		B1D5C5451F38463B0067E9B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D5C5431F38463B0067E9B8 /* Main.storyboard */; };
+		B1D5C5471F38463B0067E9B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1D5C5461F38463B0067E9B8 /* Assets.xcassets */; };
+		B1D5C54A1F38463B0067E9B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D5C5481F38463B0067E9B8 /* LaunchScreen.storyboard */; };
+		B1D5C5551F38463B0067E9B8 /* OnlinepdfDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D5C5541F38463B0067E9B8 /* OnlinepdfDemoTests.m */; };
+		B1D5C5601F38463B0067E9B8 /* OnlinepdfDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D5C55F1F38463B0067E9B8 /* OnlinepdfDemoUITests.m */; };
+		D62947DA51E31C5C4536618D /* libPods-OnlinepdfDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61BC3AE97E72E729B93D1D6C /* libPods-OnlinepdfDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1D5C5511F38463B0067E9B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1D5C52F1F38463B0067E9B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1D5C5361F38463B0067E9B8;
+			remoteInfo = OnlinepdfDemo;
+		};
+		B1D5C55C1F38463B0067E9B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1D5C52F1F38463B0067E9B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1D5C5361F38463B0067E9B8;
+			remoteInfo = OnlinepdfDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B8020A38B8BCE3441618049 /* Pods-OnlinepdfDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlinepdfDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnlinepdfDemo/Pods-OnlinepdfDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3C17C0F8C6E992AADED1D50F /* Pods-OnlinepdfDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlinepdfDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnlinepdfDemo/Pods-OnlinepdfDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		61BC3AE97E72E729B93D1D6C /* libPods-OnlinepdfDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnlinepdfDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10F7DDD1F413AB00002A7B2 /* WXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiManager.h; sourceTree = "<group>"; };
+		B10F7DDE1F413AB00002A7B2 /* WXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiManager.m; sourceTree = "<group>"; };
+		B10F7DDF1F413AB00002A7B2 /* WXApiRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiRequestHandler.h; sourceTree = "<group>"; };
+		B10F7DE01F413AB00002A7B2 /* WXApiRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiRequestHandler.m; sourceTree = "<group>"; };
+		B10F7DE11F413AB00002A7B2 /* WXApiResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiResponseHandler.h; sourceTree = "<group>"; };
+		B10F7DE21F413AB00002A7B2 /* WXApiResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiResponseHandler.m; sourceTree = "<group>"; };
+		B18161A01F41355900E300FD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B18161AF1F4138E300E300FD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B18161B01F4138E300E300FD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B18161B11F4138E300E300FD /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		B18161B31F4138E300E300FD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B18161B41F4138E300E300FD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B18161B61F4138E300E300FD /* PdfShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdfShowViewController.h; sourceTree = "<group>"; };
+		B18161B71F4138E300E300FD /* PdfShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdfShowViewController.m; sourceTree = "<group>"; };
+		B18161B91F4138E300E300FD /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		B18161BA1F4138E300E300FD /* Reader.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Reader.pdf; sourceTree = "<group>"; };
+		B18161C41F4139B100E300FD /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B18161C61F4139F600E300FD /* WebChatShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebChatShareViewController.h; sourceTree = "<group>"; };
+		B18161C71F4139F600E300FD /* WebChatShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebChatShareViewController.m; sourceTree = "<group>"; };
+		B18161CE1F413A6800E300FD /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		B18161CF1F413A6800E300FD /* GetMessageFromWXResp+responseWithTextOrMediaMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GetMessageFromWXResp+responseWithTextOrMediaMessage.h"; sourceTree = "<group>"; };
+		B18161D01F413A6800E300FD /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GetMessageFromWXResp+responseWithTextOrMediaMessage.m"; sourceTree = "<group>"; };
+		B18161D11F413A6800E300FD /* SendMessageToWXReq+requestWithTextOrMediaMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SendMessageToWXReq+requestWithTextOrMediaMessage.h"; sourceTree = "<group>"; };
+		B18161D21F413A6800E300FD /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SendMessageToWXReq+requestWithTextOrMediaMessage.m"; sourceTree = "<group>"; };
+		B18161D31F413A6800E300FD /* UIAlertView+WX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+WX.h"; sourceTree = "<group>"; };
+		B18161D41F413A6800E300FD /* UIAlertView+WX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+WX.m"; sourceTree = "<group>"; };
+		B18161D51F413A6800E300FD /* WXMediaMessage+messageConstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXMediaMessage+messageConstruct.h"; sourceTree = "<group>"; };
+		B18161D61F413A6800E300FD /* WXMediaMessage+messageConstruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WXMediaMessage+messageConstruct.m"; sourceTree = "<group>"; };
+		B1D5C5371F38463B0067E9B8 /* OnlinepdfDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlinepdfDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1D5C53B1F38463B0067E9B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1D5C5441F38463B0067E9B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1D5C5461F38463B0067E9B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1D5C5491F38463B0067E9B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1D5C54B1F38463B0067E9B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1D5C5501F38463B0067E9B8 /* OnlinepdfDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlinepdfDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1D5C5541F38463B0067E9B8 /* OnlinepdfDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnlinepdfDemoTests.m; sourceTree = "<group>"; };
+		B1D5C5561F38463B0067E9B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1D5C55B1F38463B0067E9B8 /* OnlinepdfDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlinepdfDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1D5C55F1F38463B0067E9B8 /* OnlinepdfDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnlinepdfDemoUITests.m; sourceTree = "<group>"; };
+		B1D5C5611F38463B0067E9B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1D5C5341F38463B0067E9B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18161A11F41355900E300FD /* Security.framework in Frameworks */,
+				D62947DA51E31C5C4536618D /* libPods-OnlinepdfDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1D5C54D1F38463B0067E9B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1D5C5581F38463B0067E9B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A27932ACB8F1265A3B4A5BB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C17C0F8C6E992AADED1D50F /* Pods-OnlinepdfDemo.debug.xcconfig */,
+				3B8020A38B8BCE3441618049 /* Pods-OnlinepdfDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B10F7DDC1F413AB00002A7B2 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				B10F7DDD1F413AB00002A7B2 /* WXApiManager.h */,
+				B10F7DDE1F413AB00002A7B2 /* WXApiManager.m */,
+				B10F7DDF1F413AB00002A7B2 /* WXApiRequestHandler.h */,
+				B10F7DE01F413AB00002A7B2 /* WXApiRequestHandler.m */,
+				B10F7DE11F413AB00002A7B2 /* WXApiResponseHandler.h */,
+				B10F7DE21F413AB00002A7B2 /* WXApiResponseHandler.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		B18161AE1F4138E300E300FD /* base */ = {
+			isa = PBXGroup;
+			children = (
+				B18161AF1F4138E300E300FD /* AppDelegate.h */,
+				B18161B01F4138E300E300FD /* AppDelegate.m */,
+				B18161B11F4138E300E300FD /* Constant.h */,
+				B18161B31F4138E300E300FD /* ViewController.h */,
+				B18161B41F4138E300E300FD /* ViewController.m */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		B18161B51F4138E300E300FD /* pdf */ = {
+			isa = PBXGroup;
+			children = (
+				B18161B61F4138E300E300FD /* PdfShowViewController.h */,
+				B18161B71F4138E300E300FD /* PdfShowViewController.m */,
+			);
+			path = pdf;
+			sourceTree = "<group>";
+		};
+		B18161B81F4138E300E300FD /* rec */ = {
+			isa = PBXGroup;
+			children = (
+				B18161B91F4138E300E300FD /* logo.png */,
+				B18161BA1F4138E300E300FD /* Reader.pdf */,
+			);
+			path = rec;
+			sourceTree = "<group>";
+		};
+		B18161C51F4139F600E300FD /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				B18161C61F4139F600E300FD /* WebChatShareViewController.h */,
+				B18161C71F4139F600E300FD /* WebChatShareViewController.m */,
+			);
+			path = WeChat;
+			sourceTree = "<group>";
+		};
+		B18161CD1F413A6800E300FD /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B10F7DDC1F413AB00002A7B2 /* Control */,
+				B18161CE1F413A6800E300FD /* Constant.h */,
+				B18161CF1F413A6800E300FD /* GetMessageFromWXResp+responseWithTextOrMediaMessage.h */,
+				B18161D01F413A6800E300FD /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */,
+				B18161D11F413A6800E300FD /* SendMessageToWXReq+requestWithTextOrMediaMessage.h */,
+				B18161D21F413A6800E300FD /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */,
+				B18161D31F413A6800E300FD /* UIAlertView+WX.h */,
+				B18161D41F413A6800E300FD /* UIAlertView+WX.m */,
+				B18161D51F413A6800E300FD /* WXMediaMessage+messageConstruct.h */,
+				B18161D61F413A6800E300FD /* WXMediaMessage+messageConstruct.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B1D5C52E1F38463B0067E9B8 = {
+			isa = PBXGroup;
+			children = (
+				B1D5C5391F38463B0067E9B8 /* OnlinepdfDemo */,
+				B1D5C5531F38463B0067E9B8 /* OnlinepdfDemoTests */,
+				B1D5C55E1F38463B0067E9B8 /* OnlinepdfDemoUITests */,
+				B1D5C5381F38463B0067E9B8 /* Products */,
+				A27932ACB8F1265A3B4A5BB0 /* Pods */,
+				DE4DD0D9D5C19432D409187C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B1D5C5381F38463B0067E9B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1D5C5371F38463B0067E9B8 /* OnlinepdfDemo.app */,
+				B1D5C5501F38463B0067E9B8 /* OnlinepdfDemoTests.xctest */,
+				B1D5C55B1F38463B0067E9B8 /* OnlinepdfDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1D5C5391F38463B0067E9B8 /* OnlinepdfDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B18161CD1F413A6800E300FD /* Helper */,
+				B18161C51F4139F600E300FD /* WeChat */,
+				B18161C41F4139B100E300FD /* PrefixHeader.pch */,
+				B18161AE1F4138E300E300FD /* base */,
+				B18161B51F4138E300E300FD /* pdf */,
+				B18161B81F4138E300E300FD /* rec */,
+				B1D5C5431F38463B0067E9B8 /* Main.storyboard */,
+				B1D5C5461F38463B0067E9B8 /* Assets.xcassets */,
+				B1D5C5481F38463B0067E9B8 /* LaunchScreen.storyboard */,
+				B1D5C54B1F38463B0067E9B8 /* Info.plist */,
+				B1D5C53A1F38463B0067E9B8 /* Supporting Files */,
+			);
+			path = OnlinepdfDemo;
+			sourceTree = "<group>";
+		};
+		B1D5C53A1F38463B0067E9B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1D5C53B1F38463B0067E9B8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1D5C5531F38463B0067E9B8 /* OnlinepdfDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1D5C5541F38463B0067E9B8 /* OnlinepdfDemoTests.m */,
+				B1D5C5561F38463B0067E9B8 /* Info.plist */,
+			);
+			path = OnlinepdfDemoTests;
+			sourceTree = "<group>";
+		};
+		B1D5C55E1F38463B0067E9B8 /* OnlinepdfDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B1D5C55F1F38463B0067E9B8 /* OnlinepdfDemoUITests.m */,
+				B1D5C5611F38463B0067E9B8 /* Info.plist */,
+			);
+			path = OnlinepdfDemoUITests;
+			sourceTree = "<group>";
+		};
+		DE4DD0D9D5C19432D409187C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B18161A01F41355900E300FD /* Security.framework */,
+				61BC3AE97E72E729B93D1D6C /* libPods-OnlinepdfDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1D5C5361F38463B0067E9B8 /* OnlinepdfDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1D5C5641F38463B0067E9B8 /* Build configuration list for PBXNativeTarget "OnlinepdfDemo" */;
+			buildPhases = (
+				854F7C0A8F980A37C632EBDD /* [CP] Check Pods Manifest.lock */,
+				B1D5C5331F38463B0067E9B8 /* Sources */,
+				B1D5C5341F38463B0067E9B8 /* Frameworks */,
+				B1D5C5351F38463B0067E9B8 /* Resources */,
+				6D277DDBA13C4D11C5ADE199 /* [CP] Embed Pods Frameworks */,
+				B52C01536113A819EA5981A9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnlinepdfDemo;
+			productName = OnlinepdfDemo;
+			productReference = B1D5C5371F38463B0067E9B8 /* OnlinepdfDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1D5C54F1F38463B0067E9B8 /* OnlinepdfDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1D5C5671F38463B0067E9B8 /* Build configuration list for PBXNativeTarget "OnlinepdfDemoTests" */;
+			buildPhases = (
+				B1D5C54C1F38463B0067E9B8 /* Sources */,
+				B1D5C54D1F38463B0067E9B8 /* Frameworks */,
+				B1D5C54E1F38463B0067E9B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1D5C5521F38463B0067E9B8 /* PBXTargetDependency */,
+			);
+			name = OnlinepdfDemoTests;
+			productName = OnlinepdfDemoTests;
+			productReference = B1D5C5501F38463B0067E9B8 /* OnlinepdfDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B1D5C55A1F38463B0067E9B8 /* OnlinepdfDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1D5C56A1F38463B0067E9B8 /* Build configuration list for PBXNativeTarget "OnlinepdfDemoUITests" */;
+			buildPhases = (
+				B1D5C5571F38463B0067E9B8 /* Sources */,
+				B1D5C5581F38463B0067E9B8 /* Frameworks */,
+				B1D5C5591F38463B0067E9B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1D5C55D1F38463B0067E9B8 /* PBXTargetDependency */,
+			);
+			name = OnlinepdfDemoUITests;
+			productName = OnlinepdfDemoUITests;
+			productReference = B1D5C55B1F38463B0067E9B8 /* OnlinepdfDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1D5C52F1F38463B0067E9B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = hun;
+				TargetAttributes = {
+					B1D5C5361F38463B0067E9B8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7K5U4P98VN;
+						ProvisioningStyle = Automatic;
+					};
+					B1D5C54F1F38463B0067E9B8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B1D5C5361F38463B0067E9B8;
+					};
+					B1D5C55A1F38463B0067E9B8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B1D5C5361F38463B0067E9B8;
+					};
+				};
+			};
+			buildConfigurationList = B1D5C5321F38463B0067E9B8 /* Build configuration list for PBXProject "OnlinepdfDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1D5C52E1F38463B0067E9B8;
+			productRefGroup = B1D5C5381F38463B0067E9B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1D5C5361F38463B0067E9B8 /* OnlinepdfDemo */,
+				B1D5C54F1F38463B0067E9B8 /* OnlinepdfDemoTests */,
+				B1D5C55A1F38463B0067E9B8 /* OnlinepdfDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1D5C5351F38463B0067E9B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18161C11F4138E300E300FD /* logo.png in Resources */,
+				B1D5C54A1F38463B0067E9B8 /* LaunchScreen.storyboard in Resources */,
+				B1D5C5471F38463B0067E9B8 /* Assets.xcassets in Resources */,
+				B18161C21F4138E300E300FD /* Reader.pdf in Resources */,
+				B1D5C5451F38463B0067E9B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1D5C54E1F38463B0067E9B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1D5C5591F38463B0067E9B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D277DDBA13C4D11C5ADE199 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OnlinepdfDemo/Pods-OnlinepdfDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		854F7C0A8F980A37C632EBDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B52C01536113A819EA5981A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OnlinepdfDemo/Pods-OnlinepdfDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1D5C5331F38463B0067E9B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10F7DE41F413AB00002A7B2 /* WXApiRequestHandler.m in Sources */,
+				B18161D81F413A6800E300FD /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */,
+				B18161BF1F4138E300E300FD /* ViewController.m in Sources */,
+				B18161C01F4138E300E300FD /* PdfShowViewController.m in Sources */,
+				B10F7DE31F413AB00002A7B2 /* WXApiManager.m in Sources */,
+				B1D5C53C1F38463B0067E9B8 /* main.m in Sources */,
+				B18161BE1F4138E300E300FD /* AppDelegate.m in Sources */,
+				B10F7DE51F413AB00002A7B2 /* WXApiResponseHandler.m in Sources */,
+				B18161C81F4139F600E300FD /* WebChatShareViewController.m in Sources */,
+				B18161DA1F413A6800E300FD /* WXMediaMessage+messageConstruct.m in Sources */,
+				B18161D91F413A6800E300FD /* UIAlertView+WX.m in Sources */,
+				B18161D71F413A6800E300FD /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1D5C54C1F38463B0067E9B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1D5C5551F38463B0067E9B8 /* OnlinepdfDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1D5C5571F38463B0067E9B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1D5C5601F38463B0067E9B8 /* OnlinepdfDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1D5C5521F38463B0067E9B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1D5C5361F38463B0067E9B8 /* OnlinepdfDemo */;
+			targetProxy = B1D5C5511F38463B0067E9B8 /* PBXContainerItemProxy */;
+		};
+		B1D5C55D1F38463B0067E9B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1D5C5361F38463B0067E9B8 /* OnlinepdfDemo */;
+			targetProxy = B1D5C55C1F38463B0067E9B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1D5C5431F38463B0067E9B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1D5C5441F38463B0067E9B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1D5C5481F38463B0067E9B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1D5C5491F38463B0067E9B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1D5C5621F38463B0067E9B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1D5C5631F38463B0067E9B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1D5C5651F38463B0067E9B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C17C0F8C6E992AADED1D50F /* Pods-OnlinepdfDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7K5U4P98VN;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OnlinepdfDemo/PrefixHeader.pch";
+				INFOPLIST_FILE = OnlinepdfDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OnlinepdfDemo/OpenSDK1.7.9_NoPay",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Masonry\"",
+					"-l\"WeChatSDK\"",
+					"-l\"c++\"",
+					"-l\"sqlite3.0\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"$(inherited)",
+				);
+				PODS_ROOT = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hundred.show;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		B1D5C5661F38463B0067E9B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B8020A38B8BCE3441618049 /* Pods-OnlinepdfDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7K5U4P98VN;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OnlinepdfDemo/PrefixHeader.pch";
+				INFOPLIST_FILE = OnlinepdfDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OnlinepdfDemo/OpenSDK1.7.9_NoPay",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Masonry\"",
+					"-l\"WeChatSDK\"",
+					"-l\"c++\"",
+					"-l\"sqlite3.0\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"$(inherited)",
+				);
+				PODS_ROOT = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hundred.show;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		B1D5C5681F38463B0067E9B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OnlinepdfDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hun.com.OnlinepdfDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnlinepdfDemo.app/OnlinepdfDemo";
+			};
+			name = Debug;
+		};
+		B1D5C5691F38463B0067E9B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OnlinepdfDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hun.com.OnlinepdfDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnlinepdfDemo.app/OnlinepdfDemo";
+			};
+			name = Release;
+		};
+		B1D5C56B1F38463B0067E9B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OnlinepdfDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hun.com.OnlinepdfDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OnlinepdfDemo;
+			};
+			name = Debug;
+		};
+		B1D5C56C1F38463B0067E9B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OnlinepdfDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hun.com.OnlinepdfDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OnlinepdfDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1D5C5321F38463B0067E9B8 /* Build configuration list for PBXProject "OnlinepdfDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1D5C5621F38463B0067E9B8 /* Debug */,
+				B1D5C5631F38463B0067E9B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1D5C5641F38463B0067E9B8 /* Build configuration list for PBXNativeTarget "OnlinepdfDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1D5C5651F38463B0067E9B8 /* Debug */,
+				B1D5C5661F38463B0067E9B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1D5C5671F38463B0067E9B8 /* Build configuration list for PBXNativeTarget "OnlinepdfDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1D5C5681F38463B0067E9B8 /* Debug */,
+				B1D5C5691F38463B0067E9B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1D5C56A1F38463B0067E9B8 /* Build configuration list for PBXNativeTarget "OnlinepdfDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1D5C56B1F38463B0067E9B8 /* Debug */,
+				B1D5C56C1F38463B0067E9B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1D5C52F1F38463B0067E9B8 /* Project object */;
+}

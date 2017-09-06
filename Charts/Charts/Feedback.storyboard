@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xIr-X4-H1H">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--意见反馈-->
+        <scene sceneID="dyb-NA-OnE">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="P3h-CI-WSH" customClass="EXFeedbackViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vza-aY-YFw"/>
+                        <viewControllerLayoutGuide type="bottom" id="9FZ-Tx-XVw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ihi-Dc-cHW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zki-JB-F6O">
+                                <rect key="frame" x="10" y="279" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="CfZ-LY-din"/>
+                                    <constraint firstAttribute="width" constant="80" id="D6s-3e-waL"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="uploadImage"/>
+                                <connections>
+                                    <action selector="uploadImage:" destination="P3h-CI-WSH" eventType="touchUpInside" id="KBY-2d-XaW"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kar-1r-ENJ" customClass="ZDTextView">
+                                <rect key="frame" x="10" y="79" width="580" height="180"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传截图" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2A-HE-XRc">
+                                <rect key="frame" x="115" y="339" width="64" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.18823529411764706" green="0.22745098039215686" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8784313725490196" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="kar-1r-ENJ" firstAttribute="top" secondItem="vza-aY-YFw" secondAttribute="bottom" constant="15" id="HUk-5U-zDa"/>
+                            <constraint firstItem="a2A-HE-XRc" firstAttribute="leading" secondItem="Zki-JB-F6O" secondAttribute="trailing" constant="25" id="Rlu-Ur-o2u"/>
+                            <constraint firstItem="kar-1r-ENJ" firstAttribute="height" secondItem="ihi-Dc-cHW" secondAttribute="height" multiplier="0.3" id="fpA-Fx-oHb"/>
+                            <constraint firstItem="Zki-JB-F6O" firstAttribute="leading" secondItem="kar-1r-ENJ" secondAttribute="leading" id="gLX-Nh-Ris"/>
+                            <constraint firstItem="kar-1r-ENJ" firstAttribute="leading" secondItem="ihi-Dc-cHW" secondAttribute="leading" constant="10" id="k4l-Jd-2QC"/>
+                            <constraint firstItem="kar-1r-ENJ" firstAttribute="centerX" secondItem="ihi-Dc-cHW" secondAttribute="centerX" id="lAQ-tJ-dLN"/>
+                            <constraint firstItem="a2A-HE-XRc" firstAttribute="bottom" secondItem="Zki-JB-F6O" secondAttribute="bottom" id="rGv-af-Ibu"/>
+                            <constraint firstItem="Zki-JB-F6O" firstAttribute="top" secondItem="kar-1r-ENJ" secondAttribute="bottom" constant="20" id="zNe-Em-Ixp"/>
+                            <constraint firstAttribute="trailing" secondItem="kar-1r-ENJ" secondAttribute="trailing" constant="10" id="zhR-qg-MJQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="意见反馈" id="vat-FZ-ldf">
+                        <barButtonItem key="rightBarButtonItem" title="提交" id="NyE-zf-d54">
+                            <connections>
+                                <action selector="submitAction:" destination="P3h-CI-WSH" id="7It-6n-EX5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="rightBarButtonItem" destination="NyE-zf-d54" id="Ua5-3Y-qFW"/>
+                        <outlet property="textView" destination="kar-1r-ENJ" id="ZD8-0o-7P2"/>
+                        <outlet property="uploadButton" destination="Zki-JB-F6O" id="uFw-2Z-Jge"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dpx-xx-k5U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1220" y="368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="w8a-VQ-JlZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xIr-X4-H1H" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="51Q-sl-2fL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="P3h-CI-WSH" kind="relationship" relationship="rootViewController" id="O8C-3e-Gd3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1mV-fm-eeG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="452" y="368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="uploadImage" width="65" height="65"/>
+    </resources>
+</document>

@@ -1,0 +1,1 @@
+../../../BM4Group/Classes/Category/UIKit/UIImage+BM.h

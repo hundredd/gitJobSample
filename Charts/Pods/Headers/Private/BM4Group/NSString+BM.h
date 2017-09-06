@@ -1,0 +1,1 @@
+../../../BM4Group/Classes/Category/Foundation/NSString+BM.h

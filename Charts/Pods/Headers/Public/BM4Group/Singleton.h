@@ -1,0 +1,1 @@
+../../../BM4Group/Classes/Tool/Singleton.h
