@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10FFB5991C8FFE44001AEDEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FFB5981C8FFE44001AEDEF /* main.m */; };
+		10FFB59C1C8FFE44001AEDEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FFB59B1C8FFE44001AEDEF /* AppDelegate.m */; };
+		10FFB59F1C8FFE44001AEDEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FFB59E1C8FFE44001AEDEF /* ViewController.m */; };
+		10FFB5A21C8FFE44001AEDEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FFB5A01C8FFE44001AEDEF /* Main.storyboard */; };
+		10FFB5A41C8FFE44001AEDEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10FFB5A31C8FFE44001AEDEF /* Assets.xcassets */; };
+		10FFB5A71C8FFE44001AEDEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FFB5A51C8FFE44001AEDEF /* LaunchScreen.storyboard */; };
+		10FFB5B21C8FFE44001AEDEF /* HGDQQRCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FFB5B11C8FFE44001AEDEF /* HGDQQRCodeTests.m */; };
+		10FFB5BD1C8FFE44001AEDEF /* HGDQQRCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FFB5BC1C8FFE44001AEDEF /* HGDQQRCodeUITests.m */; };
+		10FFB5CC1C8FFEDC001AEDEF /* HGDQQRCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FFB5CB1C8FFEDC001AEDEF /* HGDQQRCodeView.m */; };
+		10FFB5CE1C8FFFBA001AEDEF /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 10FFB5CD1C8FFFBA001AEDEF /* logo.png */; };
+		8BED13FAAD562B21842EBBED /* libPods-HGDQQRCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B71B0F56DB5FC3147CD801 /* libPods-HGDQQRCode.a */; };
+		B1180B161F6FB0E800DDAC80 /* WechatIMG128.png in Resources */ = {isa = PBXBuildFile; fileRef = B1180B151F6FB0E800DDAC80 /* WechatIMG128.png */; };
+		B1180B191F6FB1EE00DDAC80 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1180B181F6FB1EE00DDAC80 /* QRCodeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10FFB5AE1C8FFE44001AEDEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10FFB58C1C8FFE44001AEDEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10FFB5931C8FFE44001AEDEF;
+			remoteInfo = HGDQQRCode;
+		};
+		10FFB5B91C8FFE44001AEDEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10FFB58C1C8FFE44001AEDEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10FFB5931C8FFE44001AEDEF;
+			remoteInfo = HGDQQRCode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10FFB5941C8FFE44001AEDEF /* HGDQQRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HGDQQRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10FFB5981C8FFE44001AEDEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		10FFB59A1C8FFE44001AEDEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		10FFB59B1C8FFE44001AEDEF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		10FFB59D1C8FFE44001AEDEF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		10FFB59E1C8FFE44001AEDEF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		10FFB5A11C8FFE44001AEDEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		10FFB5A31C8FFE44001AEDEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10FFB5A61C8FFE44001AEDEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		10FFB5A81C8FFE44001AEDEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10FFB5AD1C8FFE44001AEDEF /* HGDQQRCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HGDQQRCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10FFB5B11C8FFE44001AEDEF /* HGDQQRCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGDQQRCodeTests.m; sourceTree = "<group>"; };
+		10FFB5B31C8FFE44001AEDEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10FFB5B81C8FFE44001AEDEF /* HGDQQRCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HGDQQRCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10FFB5BC1C8FFE44001AEDEF /* HGDQQRCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGDQQRCodeUITests.m; sourceTree = "<group>"; };
+		10FFB5BE1C8FFE44001AEDEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10FFB5CA1C8FFEDC001AEDEF /* HGDQQRCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGDQQRCodeView.h; sourceTree = "<group>"; };
+		10FFB5CB1C8FFEDC001AEDEF /* HGDQQRCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGDQQRCodeView.m; sourceTree = "<group>"; };
+		10FFB5CD1C8FFFBA001AEDEF /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		18CCEADF676115C8C21A4312 /* Pods-HGDQQRCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGDQQRCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-HGDQQRCode/Pods-HGDQQRCode.release.xcconfig"; sourceTree = "<group>"; };
+		55B71B0F56DB5FC3147CD801 /* libPods-HGDQQRCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HGDQQRCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D4BBBD99B0E26E5A625870B /* Pods-HGDQQRCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGDQQRCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HGDQQRCode/Pods-HGDQQRCode.debug.xcconfig"; sourceTree = "<group>"; };
+		B1180B151F6FB0E800DDAC80 /* WechatIMG128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WechatIMG128.png; sourceTree = "<group>"; };
+		B1180B171F6FB1EE00DDAC80 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		B1180B181F6FB1EE00DDAC80 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10FFB5911C8FFE44001AEDEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BED13FAAD562B21842EBBED /* libPods-HGDQQRCode.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10FFB5AA1C8FFE44001AEDEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10FFB5B51C8FFE44001AEDEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10FFB58B1C8FFE44001AEDEF = {
+			isa = PBXGroup;
+			children = (
+				10FFB5961C8FFE44001AEDEF /* HGDQQRCode */,
+				10FFB5B01C8FFE44001AEDEF /* HGDQQRCodeTests */,
+				10FFB5BB1C8FFE44001AEDEF /* HGDQQRCodeUITests */,
+				10FFB5951C8FFE44001AEDEF /* Products */,
+				3566700FB1A9E0830F7040ED /* Pods */,
+				464E4B8202041F9D201852C1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		10FFB5951C8FFE44001AEDEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10FFB5941C8FFE44001AEDEF /* HGDQQRCode.app */,
+				10FFB5AD1C8FFE44001AEDEF /* HGDQQRCodeTests.xctest */,
+				10FFB5B81C8FFE44001AEDEF /* HGDQQRCodeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10FFB5961C8FFE44001AEDEF /* HGDQQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				B1180B151F6FB0E800DDAC80 /* WechatIMG128.png */,
+				10FFB59A1C8FFE44001AEDEF /* AppDelegate.h */,
+				10FFB59B1C8FFE44001AEDEF /* AppDelegate.m */,
+				10FFB59D1C8FFE44001AEDEF /* ViewController.h */,
+				10FFB59E1C8FFE44001AEDEF /* ViewController.m */,
+				10FFB5CA1C8FFEDC001AEDEF /* HGDQQRCodeView.h */,
+				10FFB5CB1C8FFEDC001AEDEF /* HGDQQRCodeView.m */,
+				10FFB5A01C8FFE44001AEDEF /* Main.storyboard */,
+				10FFB5A31C8FFE44001AEDEF /* Assets.xcassets */,
+				10FFB5CD1C8FFFBA001AEDEF /* logo.png */,
+				10FFB5A51C8FFE44001AEDEF /* LaunchScreen.storyboard */,
+				10FFB5A81C8FFE44001AEDEF /* Info.plist */,
+				10FFB5971C8FFE44001AEDEF /* Supporting Files */,
+				B1180B171F6FB1EE00DDAC80 /* QRCodeViewController.h */,
+				B1180B181F6FB1EE00DDAC80 /* QRCodeViewController.m */,
+			);
+			path = HGDQQRCode;
+			sourceTree = "<group>";
+		};
+		10FFB5971C8FFE44001AEDEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				10FFB5981C8FFE44001AEDEF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10FFB5B01C8FFE44001AEDEF /* HGDQQRCodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				10FFB5B11C8FFE44001AEDEF /* HGDQQRCodeTests.m */,
+				10FFB5B31C8FFE44001AEDEF /* Info.plist */,
+			);
+			path = HGDQQRCodeTests;
+			sourceTree = "<group>";
+		};
+		10FFB5BB1C8FFE44001AEDEF /* HGDQQRCodeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				10FFB5BC1C8FFE44001AEDEF /* HGDQQRCodeUITests.m */,
+				10FFB5BE1C8FFE44001AEDEF /* Info.plist */,
+			);
+			path = HGDQQRCodeUITests;
+			sourceTree = "<group>";
+		};
+		3566700FB1A9E0830F7040ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D4BBBD99B0E26E5A625870B /* Pods-HGDQQRCode.debug.xcconfig */,
+				18CCEADF676115C8C21A4312 /* Pods-HGDQQRCode.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		464E4B8202041F9D201852C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55B71B0F56DB5FC3147CD801 /* libPods-HGDQQRCode.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10FFB5931C8FFE44001AEDEF /* HGDQQRCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10FFB5C11C8FFE44001AEDEF /* Build configuration list for PBXNativeTarget "HGDQQRCode" */;
+			buildPhases = (
+				0D4F4932831FC2E899D26232 /* [CP] Check Pods Manifest.lock */,
+				10FFB5901C8FFE44001AEDEF /* Sources */,
+				10FFB5911C8FFE44001AEDEF /* Frameworks */,
+				10FFB5921C8FFE44001AEDEF /* Resources */,
+				7A8E1E0547B12F5C4169E4F9 /* [CP] Embed Pods Frameworks */,
+				1930455FE1F58D4BD49F05A1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HGDQQRCode;
+			productName = HGDQQRCode;
+			productReference = 10FFB5941C8FFE44001AEDEF /* HGDQQRCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10FFB5AC1C8FFE44001AEDEF /* HGDQQRCodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10FFB5C41C8FFE44001AEDEF /* Build configuration list for PBXNativeTarget "HGDQQRCodeTests" */;
+			buildPhases = (
+				10FFB5A91C8FFE44001AEDEF /* Sources */,
+				10FFB5AA1C8FFE44001AEDEF /* Frameworks */,
+				10FFB5AB1C8FFE44001AEDEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10FFB5AF1C8FFE44001AEDEF /* PBXTargetDependency */,
+			);
+			name = HGDQQRCodeTests;
+			productName = HGDQQRCodeTests;
+			productReference = 10FFB5AD1C8FFE44001AEDEF /* HGDQQRCodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		10FFB5B71C8FFE44001AEDEF /* HGDQQRCodeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10FFB5C71C8FFE44001AEDEF /* Build configuration list for PBXNativeTarget "HGDQQRCodeUITests" */;
+			buildPhases = (
+				10FFB5B41C8FFE44001AEDEF /* Sources */,
+				10FFB5B51C8FFE44001AEDEF /* Frameworks */,
+				10FFB5B61C8FFE44001AEDEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10FFB5BA1C8FFE44001AEDEF /* PBXTargetDependency */,
+			);
+			name = HGDQQRCodeUITests;
+			productName = HGDQQRCodeUITests;
+			productReference = 10FFB5B81C8FFE44001AEDEF /* HGDQQRCodeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10FFB58C1C8FFE44001AEDEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = zhuming;
+				TargetAttributes = {
+					10FFB5931C8FFE44001AEDEF = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 7K5U4P98VN;
+					};
+					10FFB5AC1C8FFE44001AEDEF = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 10FFB5931C8FFE44001AEDEF;
+					};
+					10FFB5B71C8FFE44001AEDEF = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 10FFB5931C8FFE44001AEDEF;
+					};
+				};
+			};
+			buildConfigurationList = 10FFB58F1C8FFE44001AEDEF /* Build configuration list for PBXProject "HGDQQRCode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10FFB58B1C8FFE44001AEDEF;
+			productRefGroup = 10FFB5951C8FFE44001AEDEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10FFB5931C8FFE44001AEDEF /* HGDQQRCode */,
+				10FFB5AC1C8FFE44001AEDEF /* HGDQQRCodeTests */,
+				10FFB5B71C8FFE44001AEDEF /* HGDQQRCodeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10FFB5921C8FFE44001AEDEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10FFB5CE1C8FFFBA001AEDEF /* logo.png in Resources */,
+				10FFB5A71C8FFE44001AEDEF /* LaunchScreen.storyboard in Resources */,
+				10FFB5A41C8FFE44001AEDEF /* Assets.xcassets in Resources */,
+				B1180B161F6FB0E800DDAC80 /* WechatIMG128.png in Resources */,
+				10FFB5A21C8FFE44001AEDEF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10FFB5AB1C8FFE44001AEDEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10FFB5B61C8FFE44001AEDEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D4F4932831FC2E899D26232 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1930455FE1F58D4BD49F05A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HGDQQRCode/Pods-HGDQQRCode-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A8E1E0547B12F5C4169E4F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HGDQQRCode/Pods-HGDQQRCode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10FFB5901C8FFE44001AEDEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1180B191F6FB1EE00DDAC80 /* QRCodeViewController.m in Sources */,
+				10FFB5CC1C8FFEDC001AEDEF /* HGDQQRCodeView.m in Sources */,
+				10FFB59F1C8FFE44001AEDEF /* ViewController.m in Sources */,
+				10FFB59C1C8FFE44001AEDEF /* AppDelegate.m in Sources */,
+				10FFB5991C8FFE44001AEDEF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10FFB5A91C8FFE44001AEDEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10FFB5B21C8FFE44001AEDEF /* HGDQQRCodeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10FFB5B41C8FFE44001AEDEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10FFB5BD1C8FFE44001AEDEF /* HGDQQRCodeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10FFB5AF1C8FFE44001AEDEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10FFB5931C8FFE44001AEDEF /* HGDQQRCode */;
+			targetProxy = 10FFB5AE1C8FFE44001AEDEF /* PBXContainerItemProxy */;
+		};
+		10FFB5BA1C8FFE44001AEDEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10FFB5931C8FFE44001AEDEF /* HGDQQRCode */;
+			targetProxy = 10FFB5B91C8FFE44001AEDEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		10FFB5A01C8FFE44001AEDEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10FFB5A11C8FFE44001AEDEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		10FFB5A51C8FFE44001AEDEF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10FFB5A61C8FFE44001AEDEF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10FFB5BF1C8FFE44001AEDEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10FFB5C01C8FFE44001AEDEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10FFB5C21C8FFE44001AEDEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D4BBBD99B0E26E5A625870B /* Pods-HGDQQRCode.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7K5U4P98VN;
+				INFOPLIST_FILE = HGDQQRCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhuming.hundredn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		10FFB5C31C8FFE44001AEDEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18CCEADF676115C8C21A4312 /* Pods-HGDQQRCode.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7K5U4P98VN;
+				INFOPLIST_FILE = HGDQQRCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhuming.hundredn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		10FFB5C51C8FFE44001AEDEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HGDQQRCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhuming.HGDQQRCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HGDQQRCode.app/HGDQQRCode";
+			};
+			name = Debug;
+		};
+		10FFB5C61C8FFE44001AEDEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HGDQQRCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhuming.HGDQQRCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HGDQQRCode.app/HGDQQRCode";
+			};
+			name = Release;
+		};
+		10FFB5C81C8FFE44001AEDEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HGDQQRCodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhuming.HGDQQRCodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HGDQQRCode;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		10FFB5C91C8FFE44001AEDEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HGDQQRCodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhuming.HGDQQRCodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HGDQQRCode;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10FFB58F1C8FFE44001AEDEF /* Build configuration list for PBXProject "HGDQQRCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10FFB5BF1C8FFE44001AEDEF /* Debug */,
+				10FFB5C01C8FFE44001AEDEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10FFB5C11C8FFE44001AEDEF /* Build configuration list for PBXNativeTarget "HGDQQRCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10FFB5C21C8FFE44001AEDEF /* Debug */,
+				10FFB5C31C8FFE44001AEDEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10FFB5C41C8FFE44001AEDEF /* Build configuration list for PBXNativeTarget "HGDQQRCodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10FFB5C51C8FFE44001AEDEF /* Debug */,
+				10FFB5C61C8FFE44001AEDEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10FFB5C71C8FFE44001AEDEF /* Build configuration list for PBXNativeTarget "HGDQQRCodeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10FFB5C81C8FFE44001AEDEF /* Debug */,
+				10FFB5C91C8FFE44001AEDEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10FFB58C1C8FFE44001AEDEF /* Project object */;
+}

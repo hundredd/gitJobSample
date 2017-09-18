@@ -1,0 +1,6 @@
+platform:ios,'7.0'
+target 'CompositePic' do
+    pod 'pop','~>1.0'
+    pod 'Masonry', '~>1.0.1'
+	pod 'WechatOpenSDK'
+end

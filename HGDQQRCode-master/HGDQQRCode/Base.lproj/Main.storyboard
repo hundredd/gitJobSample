@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uji-hR-TjW">
+                                <rect key="frame" x="142" y="257" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.59897782909999997" green="0.96078431369999995" blue="0.41931107159999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="gNN-em-PWY"/>
+                                    <constraint firstAttribute="height" constant="30" id="lf7-4Y-BT4"/>
+                                </constraints>
+                                <state key="normal" title="生成二维码"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YJZ-Eo-eba"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Re0-EH-Mlz">
+                                <rect key="frame" x="97" y="51" width="180" height="180"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="JVo-R0-ja1"/>
+                                    <constraint firstAttribute="width" constant="180" id="hZm-wf-StF"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtC-zP-VxQ">
+                                <rect key="frame" x="-0.5" y="310" width="375" height="62"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="258" id="TDs-iI-2pH"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="62" id="dSd-1L-cEA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xW3-qi-jTT">
+                                <rect key="frame" x="148.5" y="401" width="77" height="30"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="读取二维码"/>
+                                <connections>
+                                    <action selector="readBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7bE-jS-CPA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhT-G0-67W">
+                                <rect key="frame" x="95" y="468" width="184" height="30"/>
+                                <state key="normal" title="根据读取的二位码生成数据"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mtC-zP-VxQ" firstAttribute="top" secondItem="Uji-hR-TjW" secondAttribute="bottom" constant="23" id="07Y-cp-c2S"/>
+                            <constraint firstItem="mtC-zP-VxQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16.5" id="5NR-KO-0sw"/>
+                            <constraint firstItem="DhT-G0-67W" firstAttribute="top" secondItem="xW3-qi-jTT" secondAttribute="bottom" constant="37" id="77x-Nb-RK0"/>
+                            <constraint firstItem="xW3-qi-jTT" firstAttribute="centerX" secondItem="mtC-zP-VxQ" secondAttribute="centerX" id="DtD-so-jOI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mtC-zP-VxQ" secondAttribute="trailing" constant="-15.5" id="JDB-D9-fXB"/>
+                            <constraint firstItem="Re0-EH-Mlz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="Qt2-MA-EBg"/>
+                            <constraint firstItem="Uji-hR-TjW" firstAttribute="top" secondItem="Re0-EH-Mlz" secondAttribute="bottom" constant="26" id="RKk-eB-pw5"/>
+                            <constraint firstItem="mtC-zP-VxQ" firstAttribute="centerX" secondItem="Uji-hR-TjW" secondAttribute="centerX" id="VuQ-fT-usV"/>
+                            <constraint firstItem="Re0-EH-Mlz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="81" id="Xbm-ds-Sx8"/>
+                            <constraint firstItem="DhT-G0-67W" firstAttribute="centerX" secondItem="xW3-qi-jTT" secondAttribute="centerX" id="Y2F-Cw-6j6"/>
+                            <constraint firstItem="mtC-zP-VxQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="lsM-8J-Oc4"/>
+                            <constraint firstItem="Uji-hR-TjW" firstAttribute="centerX" secondItem="Re0-EH-Mlz" secondAttribute="centerX" id="vKM-TJ-MTi"/>
+                            <constraint firstItem="xW3-qi-jTT" firstAttribute="top" secondItem="mtC-zP-VxQ" secondAttribute="bottom" constant="29" id="zAf-70-kYR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="QRView" destination="Re0-EH-Mlz" id="cxy-9b-Ljr"/>
+                        <outlet property="msglabel" destination="mtC-zP-VxQ" id="0K7-QS-41C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="209" y="330"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jcl-Ah-2o2">
+            <objects>
+                <viewController id="OOu-XK-3d9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YXT-E0-WsZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ABO-ng-wwh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8gL-rb-sm0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQq-Mu-tN3">
+                                <rect key="frame" x="67" y="61" width="240" height="240"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JQq-Mu-tN3" secondAttribute="height" id="7QA-86-2uK"/>
+                                    <constraint firstAttribute="width" constant="240" id="Gfl-WN-JT2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JQq-Mu-tN3" firstAttribute="top" secondItem="YXT-E0-WsZ" secondAttribute="bottom" constant="41" id="oml-9U-NpD"/>
+                            <constraint firstItem="JQq-Mu-tN3" firstAttribute="leading" secondItem="8gL-rb-sm0" secondAttribute="leadingMargin" constant="51" id="qks-ah-Hd3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hoL-ee-nja" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="716.5" y="329.5"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
