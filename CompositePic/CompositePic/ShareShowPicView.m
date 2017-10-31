@@ -67,7 +67,7 @@
     
     [self.showImgV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.mas_equalTo(10);
-        make.right.mas_equalTo(10);
+        make.right.mas_equalTo(-10);
     }];
     
     CGFloat btnH = 50;

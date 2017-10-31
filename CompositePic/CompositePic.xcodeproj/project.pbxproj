@@ -23,6 +23,7 @@
 		B17C236A1F67C49000078160 /* 朋友圈.png in Resources */ = {isa = PBXBuildFile; fileRef = B17C23681F67C49000078160 /* 朋友圈.png */; };
 		B17C236C1F67CCE500078160 /* 二维码.png in Resources */ = {isa = PBXBuildFile; fileRef = B17C236B1F67CCE500078160 /* 二维码.png */; };
 		B17C236E1F67D4C900078160 /* 背景.png in Resources */ = {isa = PBXBuildFile; fileRef = B17C236D1F67D4C900078160 /* 背景.png */; };
+		B1DFADFA1F8B4A56007023F1 /* ScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DFADF91F8B4A56007023F1 /* ScreenViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		B17C23681F67C49000078160 /* 朋友圈.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "朋友圈.png"; sourceTree = "<group>"; };
 		B17C236B1F67CCE500078160 /* 二维码.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "二维码.png"; sourceTree = "<group>"; };
 		B17C236D1F67D4C900078160 /* 背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景.png"; sourceTree = "<group>"; };
+		B1DFADF81F8B4A56007023F1 /* ScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenViewController.h; sourceTree = "<group>"; };
+		B1DFADF91F8B4A56007023F1 /* ScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 				B17C23291F677A2800078160 /* AppDelegate.m */,
 				B17C232B1F677A2800078160 /* ViewController.h */,
 				B17C232C1F677A2800078160 /* ViewController.m */,
+				B1DFADF81F8B4A56007023F1 /* ScreenViewController.h */,
+				B1DFADF91F8B4A56007023F1 /* ScreenViewController.m */,
 				B17C235F1F677AF400078160 /* ShareShowPicView.h */,
 				B17C23601F677AF400078160 /* ShareShowPicView.m */,
 				B17C23621F677BC000078160 /* PicTools.h */,
@@ -389,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1DFADFA1F8B4A56007023F1 /* ScreenViewController.m in Sources */,
 				B17C23611F677AF400078160 /* ShareShowPicView.m in Sources */,
 				B17C232D1F677A2800078160 /* ViewController.m in Sources */,
 				B17C232A1F677A2800078160 /* AppDelegate.m in Sources */,

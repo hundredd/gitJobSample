@@ -9,6 +9,10 @@
 #import "ViewController.h"
 #import "ShareShowPicView.h"
 #import "PicTools.h"
+
+
+#import "ScreenViewController.h"
+
 @interface ViewController ()
 @property(nonatomic,strong)ShareShowPicView *showView ;//看具体的页面
 @end
@@ -23,10 +27,18 @@
 
 - (IBAction)showAction:(id)sender
 {
+    
     UIImage *img = [PicTools addImage:[UIImage imageNamed:@"背景"]
-                            andDetail:@"陈丽丽\n联系电话:152535352616"
+                           addHeadImg:[UIImage imageNamed:@"微信"]
+                              andName:@"严晨丹"
+                          andSubtitle:@"私人银行家"
+                               andTel:@"186888866666"
                             andQRCode:[UIImage imageNamed:@"二维码"]];
     [self.showView setShowImg:img];
+}
+- (IBAction)jump:(id)sender
+{
+    [self presentViewController:[NSClassFromString(@"ScreenViewController") new] animated:YES completion:nil];
 }
 
 -(ShareShowPicView *)showView
