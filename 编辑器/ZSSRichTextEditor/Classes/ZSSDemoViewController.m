@@ -44,8 +44,10 @@
     self.shouldShowKeyboard = NO;
     // Set the HTML contents of the editor
     [self setPlaceholder:@"This is a placeholder that will show when there is no content(html)"];
-    
+    self.titleStr = @"123";
+    self.oweStr = @"123123";
     [self setHTML:html];
+    
     
 }
 
@@ -79,8 +81,9 @@
 
 - (void)exportHTML {
     
-    NSLog(@"%@", [self getHTML]);
-    
+//    NSLog(@"%@", [self getHTML]);
+    NSLog(@"%@", [self getTitleText]);
+    NSLog(@"%@", [self getOweText]);
 }
 
 - (void)editorDidChangeWithText:(NSString *)text andHTML:(NSString *)html {

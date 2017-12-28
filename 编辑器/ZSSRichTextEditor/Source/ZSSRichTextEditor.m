@@ -987,6 +987,18 @@ static CGFloat kDefaultScale = 0.5;
     
 }
 
+-(void)setOweText:(NSString *)text
+{
+    NSString *trigger = [NSString stringWithFormat:@"zss_editor.setOweText(\"%@\");", text];
+    [self.editorView stringByEvaluatingJavaScriptFromString:trigger];
+}
+-(void)setTitleText:(NSString *)text
+{
+    NSString *trigger = [NSString stringWithFormat:@"zss_editor.setTitleText(\"%@\");", text];
+    [self.editorView stringByEvaluatingJavaScriptFromString:trigger];
+}
+
+
 - (void)updateHTML {
     
     NSString *html = self.internalHTML;
@@ -1019,6 +1031,16 @@ static CGFloat kDefaultScale = 0.5;
     
     return [self.editorView stringByEvaluatingJavaScriptFromString:@"zss_editor.getText();"];
     
+}
+
+-(NSString *)getOweText
+{
+    return [self.editorView stringByEvaluatingJavaScriptFromString:@"zss_editor.getOweText();"];
+}
+
+-(NSString *)getTitleText
+{
+    return [self.editorView stringByEvaluatingJavaScriptFromString:@"zss_editor.getTitleText();"];
 }
 
 - (void)dismissKeyboard {
@@ -1701,6 +1723,13 @@ static CGFloat kDefaultScale = 0.5;
 
     if(self.placeholder) {
         [self setPlaceholderText];
+    }
+    
+    if (self.titleStr) {
+        [self setTitleText:self.titleStr];
+    }
+    if (self.oweStr) {
+        [self setOweText:self.oweStr];
     }
     
     if (self.customCSS) {

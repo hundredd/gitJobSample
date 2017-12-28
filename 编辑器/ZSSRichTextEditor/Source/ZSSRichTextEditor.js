@@ -122,10 +122,9 @@ zss_editor.setPlaceholder = function(placeholder) {
             element.empty();
         }
     });
-	
-	
-    
 }
+
+
 
 zss_editor.setFooterHeight = function(footerHeight) {
     var footer = $('#zss_editor_footer');
@@ -486,6 +485,24 @@ zss_editor.setHTML = function(html) {
     editor.html(html);
 }
 
+zss_editor.setTitleText = function(text) {
+
+    $("#zss_editor_title").val(text);
+    
+}
+
+zss_editor.setOweText = function(text) {
+    
+    var editor = $('#zss_editor_owe');
+    
+    //set value
+    editor.val(text);
+    
+
+}
+
+
+
 zss_editor.insertHTML = function(html) {
     document.execCommand('insertHTML', false, html);
     zss_editor.enabledEditingItems();
@@ -530,6 +547,13 @@ zss_editor.getHTML = function() {
 
 zss_editor.getText = function() {
     return $('#zss_editor_content').text();
+}
+
+zss_editor.getTitleText = function() {
+    return $('#zss_editor_title').val();
+}
+zss_editor.getOweText = function() {
+    return $('#zss_editor_owe').val();
 }
 
 zss_editor.isCommandEnabled = function(commandName) {

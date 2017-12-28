@@ -88,6 +88,12 @@ static NSString * const ZSSRichTextEditorToolbarFonts = @"com.zedsaid.toolbarite
  */
 @property (nonatomic, strong) NSString *placeholder;
 
+//标题
+@property (nonatomic, strong) NSString *titleStr;
+//来源
+@property (nonatomic, strong) NSString *oweStr;
+
+
 /**
  *  Toolbar items to include
  */
@@ -226,5 +232,24 @@ static NSString * const ZSSRichTextEditorToolbarFonts = @"com.zedsaid.toolbarite
  *  Set custom css
  */
 - (void)setCSS:(NSString *)css;
+
+/**
+ 输入内容
+ 
+ @param text 输入文字
+ */
+-(void)setOweText:(NSString *)text;
+
+/**
+ 输入标题
+
+ @param text 输入文字
+ */
+-(void)setTitleText:(NSString *)text;
+
+
+-(NSString *)getOweText;
+
+-(NSString *)getTitleText;
 
 @end
