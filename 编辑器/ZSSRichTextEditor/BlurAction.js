@@ -1,6 +1,4 @@
 
-function show(){
+function inputOnBlur(){
     alert('123')
 }
-
-show()

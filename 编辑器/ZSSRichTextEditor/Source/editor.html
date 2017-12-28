@@ -85,9 +85,9 @@ div.zs_editor_content {
 </head>
 
 <body onLoad="zss_editor.init();">
-    <input id="zss_editor_title" class="zs_editor_title" type=text value=swerwdfwe style="border-style:none;width:100%;height:22px;font-size:22px" placeholder="请输入文章标题" />
+    <input id="zss_editor_title" class="zs_editor_title" type=text value=swerwdfwe style="border-style:none;width:100%;height:22px;font-size:22px" placeholder="请输入文章标题" onfocus="inputOnBlur()"/>
     <p style="width=100%;size:1px;"> </p>
-    <input id="zss_editor_title" class="zs_editor_title" type=text value=swerwdfwe style="border-style:none;width:100%;height:22px;font-size:22px" placeholder="请输入来源" />
+    <input id="zss_editor_owe" class="zss_editor_owe" type=text value=swerwdfwe style="border-style:none;width:100%;height:22px;font-size:22px" placeholder="请输入来源" onfocus="inputOnBlur()"/>
     <p style="width=100%;size:1px;"> </p>
 	<!-- ZSSRichTextEditor Editable Content -->
 	<div id="zss_editor_content" class="zs_editor_content" contenteditable="true" placeholder=""></div>
