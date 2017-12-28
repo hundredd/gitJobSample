@@ -35,6 +35,8 @@
     // Export HTML
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Export" style:UIBarButtonItemStylePlain target:self action:@selector(exportHTML)];
     
+    NSString *htmla = @"<div class='test'></div><!-- This is an HTML comment -->""<img src=\"http://test.cfapp.jushenghua.com/wfss/20171228/Rc04cd9b70cf24e8cb414fa37a52b7ec3.png\" width=\"100%\"/><p style=\"text-indent:0em;margin:4px auto 0px auto;\"></p><img src=\"http://test.cfapp.jushenghua.com/wfss/20171228/R4aa94228bbe049eda5516013ff6bba14.png\" width=\"100%\"/><p style=\"text-indent:0em;margin:4px auto 0px auto;\"></p><p style=\"text-indent:0em;margin:4px auto 0px auto;\"><font style=\"font-size:14.000000;color:#000000\">嗲破婆婆跟你你好</font></p>,";
+    NSString *htmlb = @"<img src=\"https://himg.bdimg.com/sys/portrait/item/a4a6e586b0e99baae7ac91e5a4a91d21\" alt=\"\">";
     // HTML Content to set in the editor
     NSString *html = @"<div class='test'></div><!-- This is an HTML comment -->"
     "<p>This is a test of the <strong>ZSSRichTextEditor</strong> by <a title=\"Zed Said\" href=\"http://www.zedsaid.com\">Zed Said Studio</a></p>";
@@ -43,10 +45,10 @@
     self.baseURL = [NSURL URLWithString:@"http://www.zedsaid.com"];
     self.shouldShowKeyboard = NO;
     // Set the HTML contents of the editor
-    [self setPlaceholder:@"This is a placeholder that will show when there is no content(html)"];
+    [self setPlaceholder:@"请输入文章内容"];
     self.titleStr = @"123";
     self.oweStr = @"123123";
-    [self setHTML:html];
+    [self setHTML:htmlb];
     
     
 }
@@ -81,7 +83,7 @@
 
 - (void)exportHTML {
     
-//    NSLog(@"%@", [self getHTML]);
+    NSLog(@"%@", [self getHTML]);
     NSLog(@"%@", [self getTitleText]);
     NSLog(@"%@", [self getOweText]);
 }
@@ -98,8 +100,16 @@
 //图片选择
 -(void)selectorPickerWithImg:(UIImage *)img andData:(NSData *)data andSelfImgStr:(NSString *)selfImageBase64String andImgStr:(NSString *)imageBase64String
 {
-    
-    
+    NSLog(@"%@",img);
+//    for (int i =0; i<10;i++) {
+//        if (!selfImageBase64String) {
+//            [self insertImageBase64String:imageBase64String alt:@""];
+//        } else {
+//            [self updateImageBase64String:imageBase64String alt:@"1"];
+//        }
+////            [self insertImage:@"https://himg.bdimg.com/sys/portrait/item/a4a6e586b0e99baae7ac91e5a4a91d21" alt:@""];
+//    }
+
 }
 
 - (void)hashtagRecognizedWithWord:(NSString *)word {

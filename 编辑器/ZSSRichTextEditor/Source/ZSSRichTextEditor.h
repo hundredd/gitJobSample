@@ -252,4 +252,7 @@ static NSString * const ZSSRichTextEditorToolbarFonts = @"com.zedsaid.toolbarite
 
 -(NSString *)getTitleText;
 
+- (void)insertImageBase64String:(NSString *)imageBase64String alt:(NSString *)alt ;
+- (void)updateImageBase64String:(NSString *)imageBase64String alt:(NSString *)alt ;
+
 @end

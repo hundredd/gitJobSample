@@ -1520,8 +1520,8 @@ static CGFloat kDefaultScale = 0.5;
 
 - (void)showInsertImageDialogFromDeviceWithScale:(CGFloat)scale alt:(NSString *)alt {
     
-    [self presentViewController:self.imagePicker animated:YES completion:nil];
-    return;
+//    [self presentViewController:self.imagePicker animated:YES completion:nil];
+//    return;
     //下面就不执行了
     // Insert button title
     NSString *insertButtonTitle = !self.selectedImageURL ? NSLocalizedString(@"Pick Image", nil) : NSLocalizedString(@"Pick New Image", nil);
@@ -1939,14 +1939,14 @@ static CGFloat kDefaultScale = 0.5;
     NSString *imageBase64String = [scaledImageData base64EncodedStringWithOptions:0];
     
     //把函数传给继承!
-    [self selectorPickerWithImg:scaledImage andData:scaledImageData andSelfImgStr:self.imageBase64String andImgStr:imageBase64String];
+//    [self selectorPickerWithImg:scaledImage andData:scaledImageData andSelfImgStr:self.imageBase64String andImgStr:imageBase64String];
 //
 //    //Decide if we have to insert or update
-//    if (!self.imageBase64String) {
-//        [self insertImageBase64String:imageBase64String alt:self.selectedImageAlt];
-//    } else {
-//        [self updateImageBase64String:imageBase64String alt:self.selectedImageAlt];
-//    }
+    if (!self.imageBase64String) {
+        [self insertImageBase64String:imageBase64String alt:self.selectedImageAlt];
+    } else {
+        [self updateImageBase64String:imageBase64String alt:self.selectedImageAlt];
+    }
     
     self.imageBase64String = imageBase64String;
 
