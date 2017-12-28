@@ -92,7 +92,7 @@ static NSString * const ZSSRichTextEditorToolbarFonts = @"com.zedsaid.toolbarite
 @property (nonatomic, strong) NSString *titleStr;
 //来源
 @property (nonatomic, strong) NSString *oweStr;
-
+@property(nonatomic,copy)void (^selectPick)(UIImage *img,NSData *data,NSString *selfImageBase64String,NSString *imageBase64String) ;//传出block
 
 /**
  *  Toolbar items to include

@@ -1841,6 +1841,8 @@ static CGFloat kDefaultScale = 0.5;
 //Blank implementation
 - (void)mentionRecognizedWithWord:(NSString *)word {}
 
+//图片选择
+-(void)selectorPickerWithImg:(UIImage *)img andData:(NSData *)data andSelfImgStr:(NSString *)selfImageBase64String andImgStr:(NSString *)imageBase64String{}
 
 #pragma mark - AlertView
 
@@ -1931,15 +1933,20 @@ static CGFloat kDefaultScale = 0.5;
     //Compress the image, as it is going to be encoded rather than linked
     NSData *scaledImageData = UIImageJPEGRepresentation(scaledImage, kJPEGCompression);
     
+    
+    
     //Encode the image data as a base64 string
     NSString *imageBase64String = [scaledImageData base64EncodedStringWithOptions:0];
     
-    //Decide if we have to insert or update
-    if (!self.imageBase64String) {
-        [self insertImageBase64String:imageBase64String alt:self.selectedImageAlt];
-    } else {
-        [self updateImageBase64String:imageBase64String alt:self.selectedImageAlt];
-    }
+    //把函数传给继承!
+    [self selectorPickerWithImg:scaledImage andData:scaledImageData andSelfImgStr:self.imageBase64String andImgStr:imageBase64String];
+//
+//    //Decide if we have to insert or update
+//    if (!self.imageBase64String) {
+//        [self insertImageBase64String:imageBase64String alt:self.selectedImageAlt];
+//    } else {
+//        [self updateImageBase64String:imageBase64String alt:self.selectedImageAlt];
+//    }
     
     self.imageBase64String = imageBase64String;
 

@@ -94,6 +94,14 @@
     
 }
 
+
+//图片选择
+-(void)selectorPickerWithImg:(UIImage *)img andData:(NSData *)data andSelfImgStr:(NSString *)selfImageBase64String andImgStr:(NSString *)imageBase64String
+{
+    
+    
+}
+
 - (void)hashtagRecognizedWithWord:(NSString *)word {
     
     NSLog(@"Hashtag has been recognized: %@", word);
