@@ -114,6 +114,7 @@
 		45F860C618A84CFA0011266B /* ZSSunlink@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45F860A418A84CFA0011266B /* ZSSunlink@2x.png */; };
 		45F860C718A84CFA0011266B /* ZSSunorderedlist@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45F860A518A84CFA0011266B /* ZSSunorderedlist@2x.png */; };
 		45F860C818A84CFA0011266B /* ZSSviewsource@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45F860A618A84CFA0011266B /* ZSSviewsource@2x.png */; };
+		B10ECC751FF492F200443C89 /* BlurAction.js in Resources */ = {isa = PBXBuildFile; fileRef = B10ECC741FF492F200443C89 /* BlurAction.js */; };
 		DB1D27A21D79EC1700EC1CBD /* ZSSimageDevice.png in Resources */ = {isa = PBXBuildFile; fileRef = DB1D27A01D79EC1700EC1CBD /* ZSSimageDevice.png */; };
 		DB1D27A31D79EC1700EC1CBD /* ZSSimageDevice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB1D27A11D79EC1700EC1CBD /* ZSSimageDevice@2x.png */; };
 		DB1D27A61D79F62D00EC1CBD /* DemoModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1D27A51D79F62D00EC1CBD /* DemoModalViewController.m */; };
@@ -260,6 +261,7 @@
 		45F860A418A84CFA0011266B /* ZSSunlink@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ZSSunlink@2x.png"; path = "Source/Images/ZSSunlink@2x.png"; sourceTree = "<group>"; };
 		45F860A518A84CFA0011266B /* ZSSunorderedlist@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ZSSunorderedlist@2x.png"; path = "Source/Images/ZSSunorderedlist@2x.png"; sourceTree = "<group>"; };
 		45F860A618A84CFA0011266B /* ZSSviewsource@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ZSSviewsource@2x.png"; path = "Source/Images/ZSSviewsource@2x.png"; sourceTree = "<group>"; };
+		B10ECC741FF492F200443C89 /* BlurAction.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = BlurAction.js; sourceTree = "<group>"; };
 		DB1D27A01D79EC1700EC1CBD /* ZSSimageDevice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ZSSimageDevice.png; path = Source/Images/ZSSimageDevice.png; sourceTree = "<group>"; };
 		DB1D27A11D79EC1700EC1CBD /* ZSSimageDevice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ZSSimageDevice@2x.png"; path = "Source/Images/ZSSimageDevice@2x.png"; sourceTree = "<group>"; };
 		DB1D27A41D79F62D00EC1CBD /* DemoModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoModalViewController.h; sourceTree = "<group>"; };
@@ -500,6 +502,7 @@
 				23A76DC3187532F1000169F6 /* ZSSRichTextEditor.js */,
 				DB703BB01D7B2FEA0013C608 /* jQuery.js */,
 				DB703BB21D7B31D10013C608 /* JSBeautifier.js */,
+				B10ECC741FF492F200443C89 /* BlurAction.js */,
 				4562858E184CFBE400B6168E /* Images */,
 			);
 			name = "Editor Resources";
@@ -611,6 +614,7 @@
 				DB1D27A21D79EC1700EC1CBD /* ZSSimageDevice.png in Resources */,
 				45F73D3318D7AE9700CD6DBA /* ZSSh4.png in Resources */,
 				45F860B418A84CFA0011266B /* ZSSindent@2x.png in Resources */,
+				B10ECC751FF492F200443C89 /* BlurAction.js in Resources */,
 				45F860C618A84CFA0011266B /* ZSSunlink@2x.png in Resources */,
 				45F860C018A84CFA0011266B /* ZSSsubscript@2x.png in Resources */,
 				45F73D2D18D7AE9700CD6DBA /* ZSScenterjustify.png in Resources */,

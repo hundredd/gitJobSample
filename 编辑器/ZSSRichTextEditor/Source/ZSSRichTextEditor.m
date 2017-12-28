@@ -436,6 +436,11 @@ static CGFloat kDefaultScale = 0.5;
     NSString *jsString = [[NSString alloc] initWithData:[NSData dataWithContentsOfFile:source] encoding:NSUTF8StringEncoding];
     htmlString = [htmlString stringByReplacingOccurrencesOfString:@"<!--editor-->" withString:jsString];
     
+    //Add ZSSRichTextEditor.js to the html file
+    NSString *BlurAction = [bundle pathForResource:@"BlurAction" ofType:@"js"];
+    NSString *BlurActionString = [[NSString alloc] initWithData:[NSData dataWithContentsOfFile:BlurAction] encoding:NSUTF8StringEncoding];
+    htmlString = [htmlString stringByReplacingOccurrencesOfString:@"<!--BureAction-->" withString:BlurActionString];
+    
     [self.editorView loadHTMLString:htmlString baseURL:self.baseURL];
     self.resourcesLoaded = YES;
     
