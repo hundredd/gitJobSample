@@ -1520,8 +1520,8 @@ static CGFloat kDefaultScale = 0.5;
 
 - (void)showInsertImageDialogFromDeviceWithScale:(CGFloat)scale alt:(NSString *)alt {
     
-//    [self presentViewController:self.imagePicker animated:YES completion:nil];
-//    return;
+    [self presentViewController:self.imagePicker animated:YES completion:nil];
+    return;
     //下面就不执行了
     // Insert button title
     NSString *insertButtonTitle = !self.selectedImageURL ? NSLocalizedString(@"Pick Image", nil) : NSLocalizedString(@"Pick New Image", nil);

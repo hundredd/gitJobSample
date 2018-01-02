@@ -41,6 +41,7 @@
     NSString *html = @"<div class='test'></div><!-- This is an HTML comment -->"
     "<p>This is a test of the <strong>ZSSRichTextEditor</strong> by <a title=\"Zed Said\" href=\"http://www.zedsaid.com\">Zed Said Studio</a></p>";
     
+    NSLog(html);
     // Set the base URL if you would like to use relative links, such as to images.
     self.baseURL = [NSURL URLWithString:@"http://www.zedsaid.com"];
     self.shouldShowKeyboard = NO;
@@ -48,7 +49,7 @@
     [self setPlaceholder:@"请输入文章内容"];
     self.titleStr = @"123";
     self.oweStr = @"123123";
-    [self setHTML:htmlb];
+    [self setHTML:html];
     
     
 }
